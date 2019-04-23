@@ -21,9 +21,12 @@ public class Slot1 {
                 money += BET;
                 continue;
             }
-            COLBAR[0] = value % SIZE + (int) Math.round(Math.random() *10);
-            COLBAR[1] = value * 2 % SIZE + (int) Math.round(Math.random() *10);
-            COLBAR[2] = value * 4 % SIZE + (int) Math.round(Math.random() *10);
+            COLBAR[0] = (COLBAR[0] + value) % SIZE;
+            COLBAR[1] = (COLBAR[1] + value) % SIZE;
+            COLBAR[2] = (COLBAR[2] + value) % SIZE;
+            //COLBAR[0] = value % SIZE + (int) Math.round(Math.random() *10);
+            //COLBAR[1] = value * 2 % SIZE + (int) Math.round(Math.random() *10);
+            //COLBAR[2] = value * 4 % SIZE + (int) Math.round(Math.random() *10);
 
             System.out.println("Выпало " + COLBAR[0] + "" + COLBAR[1] + "" + COLBAR[2]);
             if (COLBAR[0] == COLBAR[1] && COLBAR[0] == COLBAR[3]) {
