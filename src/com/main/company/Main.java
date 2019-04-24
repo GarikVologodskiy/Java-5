@@ -4,8 +4,8 @@ import java.math.BigInteger;
 public class Main {
 
     public static void main(String[] args) {
-        var a = 11;
-        var x1 = 10;
+        //var a = 11;
+        //var x1 = 10;
         int x = Integer.MAX_VALUE;
         System.out.println("x = " + x);
         System.out.println("Integer.MIN_VALUE = " + Integer.MIN_VALUE);
@@ -20,9 +20,10 @@ public class Main {
         System.out.println("Byte.MAX_VALUE = " + b);
 
         double d = Double.MAX_VALUE;
-        var var1 = 0.1d + 0.2d;
+        //var var1 = 0.1d + 0.2d;
         System.out.println("Double.MAX_VALUE " + d);
-        System.out.println("var1 = " + var1);
+        //String var1;
+        //System.out.println("var1 = " + var1);
 
         float f = Float.MAX_VALUE;
         float p = 1.6f;
@@ -33,6 +34,7 @@ public class Main {
         c = 'f';
         System.out.println("c = " + c);
 
+        int x1 = 0;
         int a1 = ++x1; //a1 = 11
         //int a1 = x1++; //a1 = 10
         System.out.println("a1 = " + a1);
