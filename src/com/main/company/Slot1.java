@@ -14,7 +14,7 @@ public class Slot1 {
         //int barPos3 = 0;
 
         while ((money1 -= BET) >= 0) {
-            System.out.println("money = " + money1);
+            System.out.println("Деньги = " + money1);
             int value = (int) Math.round(Math.random() * MAX_VALUE);
             if (value == 0) {
                 money1 += BET;
@@ -32,13 +32,13 @@ public class Slot1 {
 
             System.out.println("Выпало " + COLBAR[0] + "" + COLBAR[1] + "" + COLBAR[2]);
             if (COLBAR[0] == COLBAR[1] && COLBAR[0] == COLBAR[2]) {
-                money1 += 1_000;
+                money1 += 1_000_000;
                 System.out.println("Выигрышь!");
                 break;
             }   else
                 System.out.println("Проигрышь...");
 
         }
-        System.out.println("money = " + money1);
+        System.out.println("Деньги = " + money1);
     }
 }
